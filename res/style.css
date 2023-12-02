@@ -86,7 +86,6 @@
                 transition: .3s;
                 &:hover {
                   letter-spacing: 1.5px;
-                  color: lighten(#03c, 15%);
                 }
               }
               
