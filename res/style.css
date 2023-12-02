@@ -85,9 +85,10 @@
                 transition-property: transform;
                 transform: translateZ(0);
                 box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                
+                text-align: center;
+                transition: .3s;
                 &:hover {
-                  transform: translateY(-3px);
+                  letter-spacing: 5px;
                   color: lighten(#03c, 15%);
                 }
               }
