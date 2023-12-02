@@ -49,9 +49,6 @@
                 transition: all .3s ease-in-out; 
             }
 
-            .container:hover {
-              transform: scale(100.5%); 
-            }
             
             .linkup:hover {
                 background: linear-gradient(to right, #ff9aa2, #ffb7b2, #ffdac1, #e2f0cb, #b5ead7, #c7ceea);
@@ -88,7 +85,7 @@
                 text-align: center;
                 transition: .3s;
                 &:hover {
-                  letter-spacing: 5px;
+                  letter-spacing: 1.5px;
                   color: lighten(#03c, 15%);
                 }
               }
@@ -126,6 +123,7 @@
               50% {
                   background-position: 100% 0;
               }
+              
               }
               
               @-webkit-keyframes ven {
@@ -176,5 +174,41 @@
                 animation-timing-function: ease-in-out;
                 -webkit-animation-iteration-count: 0.3;
                 animation-iteration-count: 1;
+              }
+              
+              .yippee2 {
+                position: relative;
+                font-size:  20px;
+            }
+            
+              .yippee2 span {
+                background: #ffffff;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color:transparent;
+                animation: rainbow_animation 1s linear infinite;
+                animation-fill-mode: both;
+                background-size: 6969% 666%;
+                -webkit-text-stroke: 2px #000000;
+                position: relative;
+                display: inline-block;
+                animation: yippee 1s infinite;
+                animation-delay: calc(.03s * var(--i));
+              }
+              @keyframes yippee2 {
+                0%,40%,100% {
+                  transform: translateY(0);
+                }
+                20% {
+                  transform: translateY(-8px);
+                }
+                0%,100% {
+                  background-position: 0 0;
+              }
+
+              50% {
+                  background-position: 100% 0;
+              }
+              
               }
 
