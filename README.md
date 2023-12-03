@@ -5,4 +5,4 @@
   
 it's nothing big at all but i hope you enjoy your stay ~ ! 🌻
 
-<img src="https://taru.lol/res/embed.gif">
+<img src="taruirl.png" height="300">

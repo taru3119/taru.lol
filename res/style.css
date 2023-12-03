@@ -87,7 +87,7 @@
                 text-align: center;
                 transition: .3s;
                 &:hover {
-                  letter-spacing: 1.8px;
+                  letter-spacing: 1.5px;
                 }
               }
               
