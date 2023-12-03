@@ -5,6 +5,9 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
+                margin: 0;
+              padding: 0;
+              text-align: center;
             }
 
             * {
@@ -13,15 +16,14 @@
                 font-size: 120%;
                 padding: 0.1%;
                 text-shadow: 1px 1px 2px;
-                text-align: center;
                 text-underline-offset: 0.5px;
-                -webkit-text-stroke: 2px #000000;
+                -webkit-text-stroke: 1.6px #000000;
                 text-decoration: none;
                 text-decoration-color: rgb(255, 255, 255);
                 cursor:url('/res/lyre.cur'), pointer
 
             }
-            /* THIS DOES LITERALLY NOTHING... */
+            /* THIS DOES LITERALLY NOTHING... LAWLS */
             .concon {
                 width: 500px;
                 margin: 0 auto;
@@ -35,6 +37,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                text-align: center;
             }
 
             .container {
@@ -42,13 +45,12 @@
                 margin: 0 auto;
                 background-color: rgb(255, 255, 255);
                 padding: 15px;
-                box-shadow: 0 0 30px 30px #00000059;
+                box-shadow: 0 0 30px 30px #00000021;
                 border-radius: 10px;
                 font-size: 16px;
                 outline: transparent 3px rgb(255, 255, 255);
                 transition: all .3s ease-in-out; 
             }
-
             
             .linkup:hover {
                 background: linear-gradient(to right, #ff9aa2, #ffb7b2, #ffdac1, #e2f0cb, #b5ead7, #c7ceea);
@@ -58,7 +60,7 @@
                 animation: rainbow_animation 1s linear infinite;
                 animation-fill-mode: both;
                 background-size: 6969% 666%;
-                -webkit-text-stroke: 2px #000000;
+                -webkit-text-stroke: 1.6px #000000;
             }
                 /* i very much stole this from stackoverflow, thanks strange EDIT: hi naku thanks for funny rainbow */
                 @keyframes rainbow_animation {
@@ -85,8 +87,7 @@
                 text-align: center;
                 transition: .3s;
                 &:hover {
-                  letter-spacing: 1.5px;
-                  color: lighten(#03c, 15%);
+                  letter-spacing: 1.8px;
                 }
               }
               
@@ -103,7 +104,7 @@
                 animation: rainbow_animation 1s linear infinite;
                 animation-fill-mode: both;
                 background-size: 6969% 666%;
-                -webkit-text-stroke: 2px #000000;
+                -webkit-text-stroke: 1.6px #000000;
                 position: relative;
                 display: inline-block;
                 animation: yippee 1s infinite;
@@ -123,9 +124,23 @@
               50% {
                   background-position: 100% 0;
               }
-              
+            }
+
+              .ven {
+                display: inline-block;
+                vertical-align: center;
+                &:hover{
+                  -webkit-animation-name: ven;
+                  animation-name: ven;
+                  -webkit-animation-duration: 0.5s;
+                  animation-duration: 0.5s;
+                  -webkit-animation-timing-function: ease-in-out;
+                  animation-timing-function: ease-in-out;
+                  -webkit-animation-iteration-count: 0.3;
+                  animation-iteration-count: infinite;
+                  }
               }
-              
+
               @-webkit-keyframes ven {
                 16.65% {
                   -webkit-transform: translateY(-4px);
@@ -158,23 +173,7 @@
                   transform: translateY(0);
                 }
               }
-              .ven {
-                display: inline-block;
-                vertical-align: middle;
-                -webkit-transform: perspective(1px) translateZ(0);
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-              }
-              .ven:hover, .ven:focus, .ven:active {
-                -webkit-animation-name: ven;
-                animation-name: ven;
-                -webkit-animation-duration: 0.5s;
-                animation-duration: 0.5s;
-                -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-iteration-count: 0.3;
-                animation-iteration-count: 1;
-              }
+
               
               .yippee2 {
                 position: relative;
@@ -185,11 +184,11 @@
                 background: #ffffff;
                 -webkit-background-clip: text;
                 background-clip: text;
-                color:transparent;
+                color: #ffffff;
                 animation: rainbow_animation 1s linear infinite;
                 animation-fill-mode: both;
                 background-size: 6969% 666%;
-                -webkit-text-stroke: 2px #000000;
+                -webkit-text-stroke: 1.6px #000000;
                 position: relative;
                 display: inline-block;
                 animation: yippee 1s infinite;
@@ -212,3 +211,10 @@
               
               }
 
+              .thingy {
+                text-align: left;
+                }
+
+              .thingy2 {
+                text-align: right;
+              }
